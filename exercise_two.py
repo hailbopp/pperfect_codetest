@@ -7,7 +7,7 @@ import Levenshtein
 
 
 def find_matches(inputs_filename: str, patterns_filename: str) -> None:
-    # I'm going to make possibly bad assumptions here and load patterns into memory as for performance.
+    # I'm going to make possibly bad assumptions here and load patterns into memory for performance.
     # If the patterns file is _huge_ (i.e. gigabytes), we're gonna have a problem, but that would require some serious
     # consideration.
 
