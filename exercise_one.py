@@ -37,7 +37,7 @@ def is_service_responding(url: str) -> bool:
         raise
 
 
-def main(url: str) -> int:
+def main(url: str):
     responding = is_service_responding(url)
     print("{0} is {1} to requests".format(url, "responding" if responding else "not responding"))
 
