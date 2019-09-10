@@ -18,7 +18,7 @@ Suppose you are given a string, domain (e.g. "prodperfect.com"). Please write an
 
 ### Usage
 ```
-./exercise_one.py prodperfect.com
+./exercise_one.py <domain>
 ```
 
 ## Exercise Two
@@ -28,3 +28,7 @@ Suppose you are given two files, input.txt and patterns.txt.  Please write an ap
 2. Output the lines in input.txt that contain a line in pattern.txt.
 3. (Optional) Output the lines in input.txt that are an edit distance of 1 away from a line in pattern.txt.
 
+### Usage
+```
+./exercise_two.py <inputs file path> <patterns file path>
+```

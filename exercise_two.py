@@ -6,13 +6,14 @@ import sys
 import Levenshtein
 
 
-def find_matches(inputs_filename: str, patterns_filename: str):
+def find_matches(inputs_filename: str, patterns_filename: str) -> None:
     # I'm going to make possibly bad assumptions here and load patterns into memory as for performance.
     # If the patterns file is _huge_ (i.e. gigabytes), we're gonna have a problem, but that would require some serious
     # consideration.
 
     # I was previously compiling these into regexes and attempting to find all at once, but it was more trouble than it
-    # was worth at this juncture.
+    # was worth at this juncture due to the possibility of accidentally failing to escape part of a regex in the
+    # pattern from the file when compiling.
     partial_matches = []
     full_matches = []
     fuzzy_matches = []
